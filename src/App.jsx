@@ -9,10 +9,10 @@ function App() {
   
 
   return(
-    <>
+    <div>
     <NavBar/>
     <ItemListContainer greeting= {"holaa, bienvenidos"}/>
-    </>
+    </div>
   );
 }
 
