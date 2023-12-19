@@ -10,10 +10,14 @@ function App() {
   
 
   return(
-    <>
+    <BrowserRouter>
     <NavBar/>
-    <ItemListContainer greeting= {"holaa, bienvenidos"}/>
-    </>
+    <Routes>
+      <Route path='/' element={ <ItemListContainer greeting= {"holaa, bienvenidos"}/> } />
+    </Routes>
+    </BrowserRouter>
+   
+  
   );
 }
 

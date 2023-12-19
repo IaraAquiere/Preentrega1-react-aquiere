@@ -1,7 +1,7 @@
 const productos = [
     {
       id: "ajacs4926", 
-      nombre: "CINTO PERLAS STRASS IMPORTADO", 
+      nombre: "cinto perlas strass", 
       description: "Talle unico", 
       precio: 24500,  
       stock: 3, 
@@ -10,7 +10,7 @@ const productos = [
     },
     {
       id: "ajacs4937", 
-      nombre: "CARTERA BAG SILVER CROC IMPORTADA", 
+      nombre: "bag silver croc", 
       description: "", 
       precio: 24500,  
       stock: 2, 
@@ -19,7 +19,7 @@ const productos = [
     },
     {
       id: "ajacs4948", 
-      nombre: "CINTO DIAMOND STRASS IMPORTADO", 
+      nombre: "cinto diamond strass", 
       description: "", 
       precio: 22500,  
       stock: 5, 
@@ -28,7 +28,7 @@ const productos = [
     },
     {
       id: "ajacs4950", 
-      nombre: "CINTO BELT A METAL IMPORTADO", 
+      nombre: "cinto belt a metal", 
       description: "", 
       precio: 24500,  
       stock: 3, 
@@ -37,7 +37,7 @@ const productos = [
     },
     {
       id: "axax1243", 
-      nombre: "VESTIDO METAL CHAPA IMPORTADO (ELASTIZADO)", 
+      nombre: "metal chapa (elastizado)", 
       description: "Talle unico", 
       precio: 56500,  
       stock: 2, 
@@ -46,7 +46,7 @@ const productos = [
     },
     {
       id: "axax1254", 
-      nombre: "VESTIDO CUT STRASS MANGA LARGA IMPORTADO", 
+      nombre: "cut strass manga larga", 
       description: "Talle unico", 
       precio: 64500,  
       stock: 4, 
@@ -55,7 +55,7 @@ const productos = [
     },
     {
       id: "axax1265", 
-      nombre: "VESTIDO DOLL GLITTER AQUA IMPORTADO", 
+      nombre: "doll glitter aqua", 
       description: "Talle unico", 
       precio: 74500,  
       stock: 3, 
@@ -64,7 +64,7 @@ const productos = [
     },
     {
       id: "axax1276", 
-      nombre: "VESTIDO CUT STRASS XL IMPORTADO", 
+      nombre: "cut strass xl", 
       description: "Talle unico", 
       precio: 78500,  
       stock: 4, 
@@ -73,7 +73,7 @@ const productos = [
     },
     {
       id: "gnrl7390", 
-      nombre: "CORSET ARIANA IMPORTADO (PUSH UP)", 
+      nombre: "corset ariana (push up)", 
       description: "Talle unico", 
       precio: 28500,  
       stock: 4, 
@@ -82,7 +82,7 @@ const productos = [
     },
     {
       id: "gnrl7302", 
-      nombre: "REMERA CROP CEBRA CUELLO BOTE IMPORTADA", 
+      nombre: "crop cebra cuello ", 
       description: "Talle unico", 
       precio: 26500,  
       stock: 4, 
@@ -91,7 +91,7 @@ const productos = [
     },
     {
       id: "gnrl7359", 
-      nombre: "BRALETTE SATEN PUSH UP IMPORTADO", 
+      nombre: "brallette saten push up", 
       description: "Talle unico", 
       precio: 18500,  
       stock: 2, 
@@ -100,7 +100,7 @@ const productos = [
     },
     {
       id: "gnrl7342", 
-      nombre: "CORSET BARBIE SATEN IMPORTADO", 
+      nombre: "corset barbie saten", 
       description: "Talle unico", 
       precio: 8500,  
       stock: 2, 

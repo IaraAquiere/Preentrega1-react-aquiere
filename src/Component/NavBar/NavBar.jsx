@@ -12,7 +12,7 @@ const NavBar = () => {
         <li><a href="#">Vestidos</a></li>
       <li><a href="#">Accesorios</a></li>
     </ul>
-    <CartWidget />
+      <CartWidget />
     </div>
   )
 }

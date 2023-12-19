@@ -4,7 +4,6 @@ const Item = ({producto}) => {
     <div className="item">
       <img src={producto.imagen} alt={producto.nombre} />
       <p>{producto.nombre}</p>
-      <p>$ {producto.precio}</p>
       <button>Ver detalle</button>
     </div>
   );

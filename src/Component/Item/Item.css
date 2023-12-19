@@ -10,16 +10,11 @@
 }
   
   .item button{
-    background-color: black;
-    color: white;
-  }
-
-  .item :hover {
-    background-color: rgba(255, 0, 0, 0.13);
+    background-color: rgb(14, 13, 13);
+    color: rgb(255, 251, 251);
   }
   
-  /* Add some padding inside the card container 
-  /*.item h5 {
+  .item h5 {
     padding: 2px 16px;
   }
 
@@ -27,7 +22,7 @@
   max-width: 200px
 }
     .item:hover {
-    box-shadow: 0 8px 16px 0 rgba(160, 5, 5, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
   
 
@@ -35,4 +30,4 @@
 
 
   
-  */
+  
