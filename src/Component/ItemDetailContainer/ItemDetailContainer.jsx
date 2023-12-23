@@ -1,39 +1,25 @@
-import { useState } from "react"
-import "./ItemDetailContainer.css"
-import useCargando from "../Hook/useCargando"
+import { useState, useEffect } from "react"
 import AgarrarProductos from "../Utilidades/Data"
-
-
+import ItemDetail from "../ItemDetail/ItemDetail"
 const ItemDetailContainer = () => {
-    const [detalle, setDetalle] = useState([])
-    const {cargando, mostrarCargando, ocultarCargando, pantallaDeCarga} = useCargando()
+    const [producto, setProducto] = useState([])
     
     useEffect(() => {
-        mostrarCargando();
-    
+
         AgarrarProductos
       .then((respuesta) => {
-        setDetalle(respuesta); 
+        const encontrarProducto = respuesta.find ((product) => product.id === "ajacs4926")
+        setProducto = encontrarProducto
       })
       .catch((error) => {
         console.log(error);
       })
-      .finally(() => {
-        ocultarCargando();
-      });
+      
       }, [])
     return (
-        <>
-        { cargando ? (
-          <div className="algo">
-            {pantallaDeCarga}
-          </div>
-        ) : (
         <div>
-        <ItemDetail detalle={detalle}/>
+        <ItemDetail producto={producto}/>
         </div>
-        )}
-        </>
   )
 }
 
