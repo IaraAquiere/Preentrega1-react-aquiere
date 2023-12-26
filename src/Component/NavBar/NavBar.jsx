@@ -14,7 +14,7 @@ const NavBar = () => {
           <Link to="/categoria/tops">Tops</Link>
         </li>
         <li>
-          <Link to="/categoria/shortPollera">Short/Polleras</Link>
+          <Link to="/categoria/shorts">Short</Link>
         </li>
         <li>
           <Link to="/categoria/vestidos">Vestidos</Link>

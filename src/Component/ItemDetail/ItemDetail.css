@@ -19,3 +19,8 @@
     text-transform: uppercase;
     font-weight: bold;
   }
+
+  .item-detail .texto p{
+    text-transform: none;
+    font-weight: 0px;
+  }

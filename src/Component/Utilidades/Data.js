@@ -1,8 +1,8 @@
 const productos = [
     {
       id: "ajacs4926", 
-      nombre: "cinto perlas strass", 
-      description: "Talle unico", 
+      nombre: "cinto perlas ", 
+      description: "Talle unico, detalle en hebilla de perlas y strass", 
       precio: 24500,  
       stock: 3, 
       categoria:"accesorios",
@@ -10,8 +10,8 @@ const productos = [
     },
     {
       id: "ajacs4937", 
-      nombre: "bag silver croc", 
-      description: "", 
+      nombre: "bag croc", 
+      description: "mini bag plateada, importada, con correa corta", 
       precio: 24500,  
       stock: 2, 
       categoria:"accesorios",
@@ -19,8 +19,8 @@ const productos = [
     },
     {
       id: "ajacs4948", 
-      nombre: "cinto diamond strass", 
-      description: "", 
+      nombre: "cinto diamond", 
+      description: "detalle con strass, talle unico, importado", 
       precio: 22500,  
       stock: 5, 
       categoria:"accesorios",
@@ -28,8 +28,8 @@ const productos = [
     },
     {
       id: "ajacs4950", 
-      nombre: "cinto belt a metal", 
-      description: "", 
+      nombre: "cinto belt ", 
+      description: "talle unico, con detalle en hevilla plateado", 
       precio: 24500,  
       stock: 3, 
       categoria:"accesorios",
@@ -38,7 +38,7 @@ const productos = [
     {
       id: "axax1243", 
       nombre: "metal chapa (elastizado)", 
-      description: "Talle unico", 
+      description: "tipo metal, elastizado e importado. Color: tipo lila.", 
       precio: 56500,  
       stock: 2, 
       categoria:"vestidos",
@@ -47,7 +47,7 @@ const productos = [
     {
       id: "axax1254", 
       nombre: "cut strass manga larga", 
-      description: "Talle unico", 
+      description: "Talle unico, transparente, importado", 
       precio: 64500,  
       stock: 4, 
       categoria:"vestidos",
@@ -56,7 +56,7 @@ const productos = [
     {
       id: "axax1265", 
       nombre: "doll glitter aqua", 
-      description: "Talle unico", 
+      description: "vesido corto con bolados, importado", 
       precio: 74500,  
       stock: 3, 
       categoria:"vestidos",
@@ -65,7 +65,7 @@ const productos = [
     {
       id: "axax1276", 
       nombre: "cut strass xl", 
-      description: "Talle unico", 
+      description: "manga larga, transparente, talle unico, importado", 
       precio: 78500,  
       stock: 4, 
       categoria:"vestidos",
@@ -74,7 +74,7 @@ const productos = [
     {
       id: "gnrl7390", 
       nombre: "corset ariana (push up)", 
-      description: "Talle unico", 
+      description: "Talle unico, push up, importado. Color: negro", 
       precio: 28500,  
       stock: 4, 
       categoria:"tops",
@@ -82,8 +82,8 @@ const productos = [
     },
     {
       id: "gnrl7302", 
-      nombre: "crop cebra cuello ", 
-      description: "Talle unico", 
+      nombre: "crop cebra", 
+      description: "Talle unico, mangas largas. Color: negro, con lineas en blanco", 
       precio: 26500,  
       stock: 4, 
       categoria:"tops",
@@ -91,22 +91,58 @@ const productos = [
     },
     {
       id: "gnrl7359", 
-      nombre: "brallette saten push up", 
-      description: "Talle unico", 
-      precio: 18500,  
-      stock: 2, 
+      nombre: "croptop Mery", 
+      description: "con cordon a los lados, push up, tale unico. Color: blanco", 
+      precio: 32500,  
+      stock: 4, 
       categoria:"tops",
-      imagen: "https://acdn.mitiendanube.com/stores/173/130/products/img_7110-fb3e77a273effacbb316978974243904-480-0.webp"
+      imagen: "https://acdn.mitiendanube.com/stores/173/130/products/1f8f3a66-ea95-49d1-9f53-dad8228c35d01-0acdd95b50590e75a816723375123832-640-0.webp"
     },
     {
       id: "gnrl7342", 
-      nombre: "corset barbie saten", 
-      description: "Talle unico", 
+      nombre: "corset barbie ", 
+      description: "Talle unico, de saten importado", 
       precio: 8500,  
       stock: 2, 
       categoria:"tops",
       imagen: "https://acdn.mitiendanube.com/stores/173/130/products/saveiro40321-9e5a8b2fc98073243016924957711287-480-0.webp"
     },
+    {
+      id: "gmrp9467", 
+      nombre: "short Rachel", 
+      description: "con cinturon tiro alto.Color: negro", 
+      precio: 18500,  
+      stock: 3, 
+      categoria:"shorts",
+      imagen: "https://acdn.mitiendanube.com/stores/173/130/products/8c58a024-d28f-4ae6-9c5a-d9d36c261a991-479c0a942a9770292f16631693579317-640-0.webp"
+    },
+    {
+        id: "gmrp1378", 
+        nombre: "short rachel", 
+        description: "con cinturon tiro alto. Color: blanco", 
+        precio: 24500,  
+        stock: 1, 
+        categoria:"shorts",
+        imagen: "https://acdn.mitiendanube.com/stores/173/130/products/1b9a202b-8bf3-49d1-bbe1-bd0ad25aae311-211a1989804efa554616633566392553-640-0.webp"
+    },
+    {
+        id: "gmrp4679", 
+        nombre: "short fiji", 
+        description: "Talle unico, tiro alto. Color: negro", 
+        precio: 16500,  
+        stock: 4, 
+        categoria:"shorts",
+        imagen: "https://acdn.mitiendanube.com/stores/173/130/products/a8c63f9f-ea87-4b62-b8e6-5532370681e91-699950803c91b35f4d16638749693912-640-0.webp"
+    },
+    {
+      id: "gmrp2459", 
+      nombre: "short Rachel sastrero", 
+      description: "Tunico talle, importado, tiro alto. Color: rojo", 
+      precio: 24500,  
+      stock: 5, 
+      categoria:"shorts",
+      imagen: "https://acdn.mitiendanube.com/stores/173/130/products/img_58191-7199accc264ec4105316956514780276-640-0.webp"
+  },
   ];
 
   const condicion = true
