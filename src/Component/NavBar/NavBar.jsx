@@ -8,7 +8,7 @@ const NavBar = () => {
       <h1>Infinity</h1>
     <ul>
         <li>
-        <Link to="/categoria/inicio">Inicio</Link>
+        <Link to="/">Inicio</Link>
         </li>
         <li>
           <Link to="/categoria/tops">Tops</Link>

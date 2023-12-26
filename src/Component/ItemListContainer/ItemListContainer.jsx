@@ -3,11 +3,13 @@ import "./ItemListContainer.css"
 import useCargando from "../Hook/useCargando"
 import ItemList from "../ItemList/ItemList"
 import AgarrarProductos from "../Utilidades/Data"
+import { useParams } from "react-router-dom"
 
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
 const [productos, setProductos] = useState([])
 const {cargando, mostrarCargando, ocultarCargando, pantallaDeCarga} = useCargando()
+const {categoria} = useParams()
 
 useEffect(() => {
   mostrarCargando();
@@ -27,7 +29,7 @@ useEffect(() => {
   .finally(() => {
     ocultarCargando();
   })
-}, [])
+}, [categoria])
 
   return (
     <>
@@ -37,7 +39,7 @@ useEffect(() => {
     </div>
   ) : (
   <div>
-  <p>{greeting}</p>
+    <h1>  </h1>
   <ItemList productos={productos}/>
   </div>
   )}
