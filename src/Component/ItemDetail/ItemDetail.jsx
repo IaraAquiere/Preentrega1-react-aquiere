@@ -1,3 +1,4 @@
+import ItemCount from "../ItemCount/ItemCount"
 import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer"
 import "./ItemDetail.css"
 const ItemDetail = ({producto}) => {
@@ -8,6 +9,7 @@ const ItemDetail = ({producto}) => {
       <h5>{producto.nombre}</h5>
       <p>{producto.description}</p>
       <h2>$ {producto.precio}</h2>
+      <ItemCount/>
       </div>
     </div>
     

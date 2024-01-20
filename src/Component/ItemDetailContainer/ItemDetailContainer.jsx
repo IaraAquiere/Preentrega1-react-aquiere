@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import AgarrarProductos from "../Utilidades/Data"
+import AgarrarProductos from "../Utilidades/Data.js"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from "react-router-dom"
 const ItemDetailContainer = () => {
