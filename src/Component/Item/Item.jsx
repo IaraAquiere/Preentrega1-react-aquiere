@@ -17,11 +17,8 @@ const Item = ({producto}) => {
     transitiom: 'transform 0.3, ease-in-out'
   }
   return (
-    <div style={carta}
-    onMouseOver={handleMouseOver}
-    onMouseLeave={handleMouseLeave}
-    className="item">
-      <img src={producto.imagen} alt={producto.nombre} />
+    <div className="item">
+      <img style={carta} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} src={producto.imagen} alt={producto.nombre} />
       <p>{producto.nombre}</p>
       <button>
       <Link to={`/detalle/${producto.id}`}>ver detalle</Link>
