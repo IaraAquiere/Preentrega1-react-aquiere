@@ -1,14 +1,14 @@
-import { useState } from "react"
+import { useState, useContext } from "react";
 
+import { Link } from "react-router-dom";
+import ItemCount from "../ItemCount/ItemCount";
+import { CartContext, CartProvider } from "../../Context/CartContext";
 
-import ItemCount from "../ItemCount/ItemCount"
-import { CartContext } from "../../Context/CartContext"
-
-import "./ItemDetail.css"
+import "./ItemDetail.css";
 
 const ItemDetail = ({ producto }) => {
   const [toggle, setToggle] = useState(false);
-  const {añadirProducto} = useContext(CartContext)
+  const { añadirProducto } = useContext(CartContext)
 
   const agregarAlCarrito = (contador) => {
     const productoNuevo = {...producto, cantidad: contador }
@@ -16,21 +16,20 @@ const ItemDetail = ({ producto }) => {
     setToggle(true);
   };
 
-  console.log(carrito);
   return (
     <div className="item-detail">
       <img className="imagen" src={producto.imagen} alt={producto.nombre} />
       <div className="texto">
-      <h5>{producto.nombre}</h5>
-      <p>{producto.description}</p>
-      <h2>$ {producto.precio}</h2>
-      <ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito}/>
+        <h2>{producto.nombre}</h2>
+        <p>{producto.descripcion}</p>
+        <p>${producto.precio}</p>
+        
+        <ItemCount stock={producto.stock}agregarAlCarrito={agregarAlCarrito}/>
       </div>
     </div>
-    
-  )
-}
+  );
+};
+export default ItemDetail;
 
-export default ItemDetail
 
 
