@@ -1,0 +1,9 @@
+.cartel-carrito .texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boton {
+    background-color: black;
+}

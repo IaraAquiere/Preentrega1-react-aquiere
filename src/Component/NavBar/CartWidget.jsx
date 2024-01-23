@@ -6,12 +6,14 @@ import { CartContext } from "../../Context/CartContext";
 const CartWidget = () => {
   const {carrito, totalCantidad} = useContext(CartContext)
   return (
-    <div id="cartwidget">
-      <Link to="/carrito">
+   
+    <Link to="/carrito">
         <FaCartShopping color="white" size={35} />
-      </Link>
-      <p>{totalCantidad()}</p>
-    </div>
+      {
+        carrito.length !== 0 && <p>{totalCantidad()}</p>
+      }
+    </Link>
+   
   );
 };
 
