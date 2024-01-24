@@ -1,27 +1,31 @@
 import { useState, useEffect } from "react"
-import AgarrarProductos from "../Utilidades/Data.js"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from "react-router-dom"
-const ItemDetailContainer = () => {
-    const [producto, setProducto] = useState({})
-    const { id } = useParams()
-    
-    useEffect(() => {
+import { doc, getDoc } from "firebase/firestore"  
+import db from "../../db/db"
 
-        AgarrarProductos
-      .then((respuesta) => {
-        const encontrarProducto = respuesta.find ((product) => product.id === id)
-        setProducto(encontrarProducto)
-      })
-      .catch ((err) => {
-        console.log(err);
-      })
-      
-      }, [])
-    return (
-        <div>
-        <ItemDetail producto={producto}/>
-        </div>
+const ItemDetailContainer = () => {
+  const [producto, setProducto] = useState({})
+  const { id } = useParams()
+
+  useEffect(() => {
+    const productosReferencia = doc(db, "products", id)  
+    getDoc(productosReferencia)  
+    .then((respuesta) => {
+      const productoDb = {id: respuesta.id, ...respuesta.data() }
+      setProducto(productoDb)
+      console.log(productoDb);
+    })
+    .catch((error) => {
+      console.error("Error obteniendo documento:", error);
+    });
+    
+  }, [id]);
+
+  return (
+    <div>
+      <ItemDetail producto={producto} />
+    </div>
   )
 }
 

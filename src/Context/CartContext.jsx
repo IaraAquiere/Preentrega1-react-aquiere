@@ -26,6 +26,10 @@ const CartProvider = ({ children }) => {
     return respuesta;
   };
 
+  const totalPrecio = () => {
+    return carrito.reduce((total, producto)=> total + (producto.cantidad * producto.precio ), 0)
+  }
+
   const totalCantidad = () => {
     return carrito.reduce((total, producto) => total + producto.cantidad, 0);
   }
@@ -36,11 +40,12 @@ const CartProvider = ({ children }) => {
 
   const borrarProducto = (idProducto) => {
     const productosFiltrados = carrito.filter ((producto) => producto.id !== idProducto)
+    setCarrito(productosFiltrados)
   }
   console.log(carrito);
 
   return (
-    <CartContext.Provider value={{ carrito, añadirProducto, totalCantidad, borrarCarrito, borrarProducto }}>
+    <CartContext.Provider value={{ carrito, añadirProducto, totalCantidad, borrarCarrito, borrarProducto, totalPrecio }}>
       {children}
     </CartContext.Provider>
   );

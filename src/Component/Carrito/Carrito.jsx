@@ -15,7 +15,9 @@ const Carrito = () => {
         <h5>Una vez que añadas algo a tu carrito, aparecerá acá. ¿Listo para empezar?</h5>
         </div>
         <div className="boton">
-        <Link to="/">Empezar!</Link>
+        <Link to="/">
+          <button>Empezar!</button> 
+        </Link>
         </div>
       </div>
     )
@@ -36,6 +38,9 @@ const Carrito = () => {
       }
       </ul>
       <button onClick={borrarCarrito} >Eliminar Carrito</button>
+      <Link to="/checkout">
+      <button>continuar con mi compra</button>
+      </Link>
     </div>
   )
 }

@@ -4,6 +4,7 @@
     flex-direction: column;
 }
 
-.boton {
-    background-color: black;
+.boton{
+    width: 400px;
+    padding-left: 15px;
 }

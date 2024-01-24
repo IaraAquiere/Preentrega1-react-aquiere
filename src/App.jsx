@@ -9,7 +9,9 @@ import { CartProvider } from "./Context/CartContext";
 import Error from "./Component/Error/Error";
 import Carrito from "./Component/Carrito/Carrito";
 
+
 import "./App.css";
+import Checkout from "./Component/Checkout/Checkout";
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
           <Route path="/categoria/:categoria" element={<ItemListContainer />} />
           <Route path="/detalle/:id" element={<ItemDetailContainer />} />
           <Route path="/carrito" element={<Carrito />} />
+          <Route path="/checkout" element={<Checkout/>}/>
           <Route path="*" element={<Error />} />
         </Routes>
         </CartProvider>
