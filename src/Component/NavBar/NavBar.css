@@ -1,12 +1,10 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
-
-#navbar{
+#navbar {
   background-color: rgb(211, 158, 255);
   display: flex;
   justify-content: space-between;
@@ -15,29 +13,28 @@
   padding: 5px 10%;
 }
 
-
-#navbar .nav-link{
+#navbar .nav-link {
   list-style: none;
 }
 
-#navbar .nav-link li{
+#navbar .nav-link li {
   display: inline-block;
   padding: 0 20px;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 20px;
   padding-top: 15px;
 }
 
-#navbar .nav-link li:hover{
+#navbar .nav-link li:hover {
   transform: scale(1.1);
 }
 
-#navbar .nav-link a{
+#navbar .nav-link a {
   font-size: 700;
   color: white;
   text-decoration: none;
 }
 
-#navbar .nav-link a:hover{
+#navbar .nav-link a:hover {
   color: black;
 }

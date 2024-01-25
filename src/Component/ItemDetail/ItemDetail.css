@@ -1,31 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Tajawal:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Tajawal:wght@700&display=swap");
 
-.item-detail{
-    display: flex;
-    padding: 5% 10%;
-  }
-  
-  .item-detail .imagen{
-    width: 300px;
-  }
-  
-  .item-detail .texto{
-    width: 50%;
-    padding: 10px 50px;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Fjalla One', sans-serif;
-    font-family: 'Tajawal', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
+.item-detail {
+  display: flex;
+  padding: 5% 10%;
+}
 
-  .item-detail .texto p{
-    text-transform: none;
-    font-weight: 0px;
-  }
+.item-detail .imagen {
+  width: 300px;
+}
 
+.item-detail .texto {
+  width: 50%;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Tajawal", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
-  .item-detail .texto .precio-detalle{
-    font-size: 30px;
-  }
+.item-detail .texto p {
+  text-transform: none;
+  font-weight: 0px;
+}
+
+.item-detail .texto .precio-detalle {
+  font-size: 30px;
+}

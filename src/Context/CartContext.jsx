@@ -10,7 +10,10 @@ const CartProvider = ({ children }) => {
     if (condicion) {
       const productosModificados = carrito.map((productoCarrito) => {
         if (productoCarrito.id === producto.id) {
-          return { ...productoCarrito, cantidad: productoCarrito.cantidad + producto.cantidad };
+          return {
+            ...productoCarrito,
+            cantidad: productoCarrito.cantidad + producto.cantidad,
+          };
         } else {
           return productoCarrito;
         }
@@ -27,25 +30,39 @@ const CartProvider = ({ children }) => {
   };
 
   const totalPrecio = () => {
-    return carrito.reduce((total, producto)=> total + (producto.cantidad * producto.precio ), 0)
-  }
+    return carrito.reduce(
+      (total, producto) => total + producto.cantidad * producto.precio,
+      0
+    );
+  };
 
   const totalCantidad = () => {
     return carrito.reduce((total, producto) => total + producto.cantidad, 0);
-  }
+  };
 
-  const borrarCarrito = () =>{
-    setCarrito([])
-  }
+  const borrarCarrito = () => {
+    setCarrito([]);
+  };
 
   const borrarProducto = (idProducto) => {
-    const productosFiltrados = carrito.filter ((producto) => producto.id !== idProducto)
-    setCarrito(productosFiltrados)
-  }
+    const productosFiltrados = carrito.filter(
+      (producto) => producto.id !== idProducto
+    );
+    setCarrito(productosFiltrados);
+  };
   console.log(carrito);
 
   return (
-    <CartContext.Provider value={{ carrito, añadirProducto, totalCantidad, borrarCarrito, borrarProducto, totalPrecio }}>
+    <CartContext.Provider
+      value={{
+        carrito,
+        añadirProducto,
+        totalCantidad,
+        borrarCarrito,
+        borrarProducto,
+        totalPrecio,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );

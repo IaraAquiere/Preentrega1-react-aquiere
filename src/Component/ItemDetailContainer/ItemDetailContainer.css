@@ -1,0 +1,24 @@
+.no-existe {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+.no-existe .boton {
+  width: 200px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}

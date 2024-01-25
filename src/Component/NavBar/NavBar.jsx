@@ -1,6 +1,7 @@
 import CartWidget from "./CartWidget";
-import "./NavBar.css"
 import { Link } from "react-router-dom";
+
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
@@ -8,7 +9,7 @@ const NavBar = () => {
       <h1>Infinity</h1>
       <ul className="nav-link">
         <li>
-        <Link to="/">Inicio</Link>
+          <Link to="/">Inicio</Link>
         </li>
         <li>
           <Link to="/categoria/tops">Tops</Link>
@@ -18,14 +19,14 @@ const NavBar = () => {
         </li>
         <li>
           <Link to="/categoria/vestidos">Vestidos</Link>
-          </li>
-      <li>
-        <Link to="/categoria/accesorios">Accesorios</Link>
-      </li>
-    </ul>
+        </li>
+        <li>
+          <Link to="/categoria/accesorios">Accesorios</Link>
+        </li>
+      </ul>
       <CartWidget />
     </div>
-  )
-}
+  );
+};
 
 export default NavBar;
