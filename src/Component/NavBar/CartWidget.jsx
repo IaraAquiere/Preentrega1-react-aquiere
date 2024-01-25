@@ -8,8 +8,8 @@ const CartWidget = () => {
   return (
    
     <Link to="/carrito">
-        <FaCartShopping color="white" size={35} />
-      {
+        <FaCartShopping color="white" size={30} />
+        {
         carrito.length !== 0 && <p>{totalCantidad()}</p>
       }
     </Link>

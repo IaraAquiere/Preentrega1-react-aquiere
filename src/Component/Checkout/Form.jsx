@@ -1,9 +1,10 @@
-import React from 'react'
+
 
 const Form = ({datosForm, guardarDatosImput, enviarOrden}) => {
   return (
     <div>
-        <form onSubmit={enviarOrden}>
+      <h2>Complete este formulario para continuar con la compra</h2>
+        <form className="formulario" onSubmit={enviarOrden}>
             <label htmlFor="nombre">Nombbre</label>
             <input type="text" id='nombre' name='nombre' value={datosForm.nombre} onChange={guardarDatosImput} />
 

@@ -24,3 +24,8 @@
     text-transform: none;
     font-weight: 0px;
   }
+
+
+  .item-detail .texto .precio-detalle{
+    font-size: 30px;
+  }

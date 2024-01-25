@@ -14,22 +14,18 @@ const Item = memo(({ producto }) => {
   };
 
   const carta = {
-    transform: zoom ? 'scale(1.2)' : 'scale(1)',
-    transition: 'transform 0.3s ease-in-out', // Corregido: 'transition' en lugar de 'transitiom'
+    transform: zoom ? 'scale(1.1)' : 'scale(1)',
+    transition: 'transform 0.3s ease-in-out', 
   };
 
   return (
-    <div className="item">
-      <img
-        style={carta}
-        onMouseOver={handleMouseOver}
-        onMouseLeave={handleMouseLeave}
-        src={producto.imagen}
-        alt={producto.nombre}
-      />
-      <p>{producto.nombre}</p>
-      <button>
-        <Link to={`/detalle/${producto.id}`}>ver detalle</Link>
+    <div className="item" style={carta} onMouseOver={handleMouseOver}
+    onMouseLeave={handleMouseLeave}>
+
+      <img className="img-item" src={producto.imagen} alt={producto.nombre}/>
+      <p className="titulo-item">{producto.nombre}</p>
+      <button className="boton-item">
+        <Link to={`/detalle/${producto.id}`}>Ver Detalle</Link>
       </button>
     </div>
   );
