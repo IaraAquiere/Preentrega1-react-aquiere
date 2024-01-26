@@ -15,7 +15,7 @@ el carrito de compras se conforma por los items preseleccionados, la cantidad qu
 
 Para crear mi proyecto utilice npm.
 ```bash
-  npm run dev
-  npm Install
   cd mi-tienda
+  npm Install
+  npm run dev
 ```
