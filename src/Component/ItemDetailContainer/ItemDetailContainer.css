@@ -9,16 +9,12 @@
 }
 
 .no-existe .boton {
-  width: 200px;
-  font-size: 13px;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  background-color: white;
-  border-radius: 4px;
-  text-decoration: none;
-  color: black;
-  border: 2px solid black;
-  margin-bottom: 20px;
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
 }

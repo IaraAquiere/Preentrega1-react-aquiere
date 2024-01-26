@@ -1,7 +1,7 @@
 const Form = ({ datosForm, guardarDatosImput, enviarOrden }) => {
   return (
     <div className="formulario-1">
-      <h2>Complete este formulario para continuar con la compra</h2>
+      <h2>Complete este formulario para continuar con la compra:</h2>
       <form className="formulario" onSubmit={enviarOrden}>
         <label htmlFor="nombre">Nombre</label>
         <input

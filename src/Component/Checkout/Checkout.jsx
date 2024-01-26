@@ -3,6 +3,7 @@ import Form from "./Form";
 import { CartContext } from "../../Context/CartContext";
 import { addDoc, collection } from "firebase/firestore";
 import db from "../../db/db";
+import Swal from 'sweetalert2'
 
 import "./Checkout.css";
 
@@ -13,8 +14,19 @@ const Checkout = () => {
     email: "",
     emailRepetido: "",
   });
+  
+
   const [idOrden, setIdOrden] = useState(null);
   const { carrito, totalPrecio, borrarCarrito } = useContext(CartContext);
+  
+  const mostrarAlerta = () =>{
+    Swal.fire({
+      title: 'Los emails no coinciden',
+      text: 'compruebelo nuevamente',
+      icon: 'error',
+      confirmButtonText: 'Continuar'
+    });
+  };
 
   const guardarDatosImput = (event) => {
     setDatosForm({ ...datosForm, [event.target.name]: event.target.value });
@@ -31,8 +43,10 @@ const Checkout = () => {
       };
       subirOrden(orden);
     } else {
+      mostrarAlerta();
     }
   };
+  
 
   const subirOrden = (orden) => {
     const ordenesRef = collection(db, "ordenes");
